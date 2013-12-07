@@ -1,6 +1,8 @@
 class Playlist
 	include Mongoid::Document
 	field :name
-	embeds_many :songs
 	belongs_to :user
+	has_many :songs
+
+	validates_presence_of :name
 end

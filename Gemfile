@@ -5,6 +5,9 @@ gem 'rails', '4.0.1'
 
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'bson_ext'
+gem 'youtube_it'
+gem 'inherited_resources'
+gem 'acts_as_commentable'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -27,6 +30,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+	gem 'pry'
 end
 
 # Use ActiveModel has_secure_password

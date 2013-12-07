@@ -2,5 +2,5 @@ class Song
 	include Mongoid::Document
 	field :name
 	field :url
-	embedded_in :playlist
+	belongs_to :playlist
 end

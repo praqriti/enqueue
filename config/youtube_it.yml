@@ -1,0 +1,9 @@
+common: &common
+ dev_key: AIzaSyAi4I-EGs5aylpt18FUVqoy_oPhowqw0WE
+
+test:
+  <<: *common
+development:
+  <<: *common
+production:
+  <<: *common
