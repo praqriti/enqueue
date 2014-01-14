@@ -6,9 +6,9 @@ gem 'rails', '4.0.1'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'bson_ext'
 gem 'youtube_it'
-gem 'inherited_resources'
-gem 'acts_as_commentable'
 
+gem 'backbone-on-rails'
+gem 'handlebars_assets'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -16,7 +16,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

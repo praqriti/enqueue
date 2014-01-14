@@ -1,12 +1,15 @@
 Enqueue::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  root 'home#index'
   get "songs/search", :as => :search, defaults: {format: :json} 
 
     resources :users , defaults: {format: :json} do
       resources :playlists , defaults: {format: :json} do
         resources :songs , defaults: {format: :json}
     end
+
+
   end
 
 
